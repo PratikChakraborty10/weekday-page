@@ -1,0 +1,29 @@
+.parent {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    z-index: 20;
+}
+
+.logo__image {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.logo__div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

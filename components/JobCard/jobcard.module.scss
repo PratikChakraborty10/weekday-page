@@ -1,0 +1,165 @@
+.parent {
+  border-radius: 8px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 6px 10px 6px 10px;
+
+  .posttime__div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: start;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 60%;
+
+    p {
+        color: black;
+        font-size: 12px;
+        font-weight: 400;
+    }
+  }
+
+  .job__heading__div {
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+    align-items: center;
+
+    .company__logo {
+        height: 38px;
+        width: 38px;
+        object-fit: contain;
+    }
+
+    .job__title__div {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: start;
+        justify-content: start;
+        
+
+        .company__name__text {
+            color: gray;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .position__details__text {
+            color: black;
+            font-size: 14px;
+        }
+
+        .location__details__text {
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+  }
+
+  .salary__details__div {
+    display: flex;
+    gap: 2px;
+    justify-content: start;
+    align-items: center;
+
+    p{
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+    }
+  }
+
+  .about__company__div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .about__title {
+        font-weight: 600;
+        font-size: 14px;
+        color: black;
+    }
+
+    .company__desc {
+        color: black;
+        font-size: 14px;
+    }
+  }
+
+  .experience__details__div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+
+    .experience__title {
+        color: gray;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .experience__value {
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+    }
+  }
+
+  .cta__button__div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .easy__apply__button {
+        background-color: #25e8e8;
+        border-radius: 8px;
+        border: 0;
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 14px 2px 14px 2px;
+    }
+
+    .easy__apply__button:hover {
+        background-color: #10b3b3;
+        border-radius: 8px;
+        border: 0;
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 14px 2px 14px 2px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+    }
+
+    .unlock__referral__button {
+        background-color: #0747a8;
+        border-radius: 8px;
+        border: 0;
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 14px 2px 14px 2px;
+    }
+
+    .unlock__referral__button:hover {
+        background-color: #050e42;
+        border-radius: 8px;
+        border: 0;
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 14px 2px 14px 2px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+  }
+}
