@@ -43,29 +43,38 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
       </div>
 
       <div className={jobCardStyle.salary__details__div}>
-  <p>Estimated Salary: 
-    {job.minJdSalary && job.minJdSalary !== null ? (
-      <>
-        <a>{job.salaryCurrencyCode} {job.minJdSalary}K</a>
-        <span> - </span>
-      </>
-    ) : (
-      <></>
-    )}
-    {job.maxJdSalary && job.maxJdSalary !== null ? ( // Add parentheses here
-      <a>{job.salaryCurrencyCode} {job.maxJdSalary}K</a>
-    ) : (
-      <></>
-    )}
-  </p>
-  <SquareCheckBig color="#07a82a" size={20} />
-</div>
+        <p>
+          Estimated Salary:
+          {job.minJdSalary && job.minJdSalary !== null ? (
+            <>
+              <a>
+                {job.salaryCurrencyCode} {job.minJdSalary}K
+              </a>
+              <span> - </span>
+            </>
+          ) : (
+            <></>
+          )}
+          {job.maxJdSalary && job.maxJdSalary !== null ? ( // Add parentheses here
+            <a>
+              {job.salaryCurrencyCode} {job.maxJdSalary}K
+            </a>
+          ) : (
+            <></>
+          )}
+        </p>
+        <SquareCheckBig color="#07a82a" size={20} />
+      </div>
 
       <div className={jobCardStyle.about__company__div}>
         <p className={jobCardStyle.about__title}>About company</p>
-        <p className={jobCardStyle.company__desc}>
-          {job.jobDetailsFromCompany}
-        </p>
+        {job.jobDetailsFromCompany && job.jobDetailsFromCompany !== null ? (
+          <p className={jobCardStyle.company__desc}>
+            {job.jobDetailsFromCompany}
+          </p>
+        ) : (
+          <></>
+        )}
       </div>
 
       {job.minExp && job.minExp !== null ? (
