@@ -86,6 +86,15 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
         <></>
       )}
 
+      {job.maxExp && job.maxExp !== null ? (
+        <div className={jobCardStyle.experience__details__div}>
+          <p className={jobCardStyle.experience__title}>Maximum Experience</p>
+          <p className={jobCardStyle.experience__value}>{job.maxExp} years</p>
+        </div>
+      ) : (
+        <></>
+      )}
+
       <div className={jobCardStyle.cta__button__div}>
         <button className={jobCardStyle.easy__apply__button}>Easy Apply</button>
         <button className={jobCardStyle.unlock__referral__button}>
