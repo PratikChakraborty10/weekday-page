@@ -126,6 +126,10 @@
         font-weight: 600;
         font-size: 18px;
         padding: 14px 2px 14px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     .easy__apply__button:hover {

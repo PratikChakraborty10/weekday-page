@@ -1,6 +1,6 @@
 import React from "react";
 import jobCardStyle from "./jobcard.module.scss";
-import { Hourglass, SquareCheckBig } from "lucide-react";
+import { Hourglass, SquareCheckBig, Zap } from "lucide-react";
 import logoSmall from "../../assets/logoSmall.png";
 import Image from "next/image";
 
@@ -96,7 +96,10 @@ const JobCard: React.FC<JobCardProps> = ({ job }) => {
       )}
 
       <div className={jobCardStyle.cta__button__div}>
-        <button className={jobCardStyle.easy__apply__button}>Easy Apply</button>
+        <button className={jobCardStyle.easy__apply__button}>
+          <Zap size={18} />
+          <p>Easy Apply</p>
+        </button>
         <button className={jobCardStyle.unlock__referral__button}>
           Unlock Referral
         </button>
