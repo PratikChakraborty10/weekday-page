@@ -1,9 +1,13 @@
 # Weekday Assignment
 
-###### This project is a candidate application platform that allows users to view job listings, filter jobs based on various criteria, and implement infinite scroll for a seamless browsing experience. The platform provides a user-friendly interface for viewing and applying to jobs.
+##### This project is a candidate application platform that allows users to view job listings, filter jobs based on various criteria, and implement infinite scroll for a seamless browsing experience. The platform provides a user-friendly interface for viewing and applying to jobs.
 
 ---
 ###### For the scope of this assignment I made the implementation of infinite scroll and handled the filter in the client side by filtering the required cards only. So, after applying filters, when the user scrolls through the feed, they will be getting only the filtered job results populating in the feed from the API response.
+
+---
+##### This project is hosted on vercel
+##### Live URL - `https://weekday-page.vercel.app/`
 
 
 ## How to run locally
